@@ -1,0 +1,825 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googlepis.com/css2?family=Josefin+sans:ital,weight@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+
+    <title>The Beginning After the End Light Novel</title>
+    <!-- <link rel='stylesheet' id='bootstrap-css' href="/the_beginning_after_the_end/bootsrap.css" type='text/css' media='all' /> -->
+    <link rel="stylesheet" href="./home_page.css" type='text/css' media='all' />
+    <!-- <link rel='stylesheet' id='lighthouse-style-css' href="./external_files/themes.css" type='text/css' media='all' /> -->
+    <link rel='stylesheet' id='lighthousegooglefonts-css' href="./external_files/fonts.css" type='text/css'
+        media='all' />
+    <script type="text/javascript" src="./homee.js"></script>
+    <nav>
+        <div class="nav-bar">
+            <i class='bx bx-menu sidebarOpen' ></i>
+            
+
+            <div class="menu">
+                <div class="logo-toggle">
+                    <span class="logo"><a href="#">HITECHY NOVELS</a></span>
+                    <i class='bx bx-x siderbarClose'></i>
+                </div>
+
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="./Navigations/skills_animation.html">Skills</a></li>
+                    <li><a href="./Navigations/portfolio.html">Portfolio</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="./Navigations/contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="darkLight-searchBox">
+                <div class="dark-light">
+                    <i class='bx bx-moon moon'></i>
+                    <i class='bx bx-sun sun'></i>
+                </div>
+
+                <div class="searchBox">
+                   <div class="searchToggle">
+                    <i class='bx bx-x cancel'></i>
+                    <i class='bx bx-search search'></i>
+                   </div>
+                   <div class="search-field">
+                        <input type="text" placeholder="Search...">
+                        <i class='bx bx-search'></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+<script>
+
+const body = document.querySelector("body"),
+      nav = document.querySelector("nav"),
+      modeToggle = document.querySelector(".dark-light"),
+      searchToggle = document.querySelector(".searchToggle"),
+      sidebarOpen = document.querySelector(".sidebarOpen"),
+      siderbarClose = document.querySelector(".siderbarClose");
+
+      let getMode = localStorage.getItem("mode");
+          if(getMode && getMode === "dark-mode"){
+            body.classList.add("dark");
+          }
+
+// js code to toggle dark and light mode
+      modeToggle.addEventListener("click" , () =>{
+        modeToggle.classList.toggle("active");
+        body.classList.toggle("dark");
+
+        // js code to keep user selected mode even page refresh or file reopen
+        if(!body.classList.contains("dark")){
+            localStorage.setItem("mode" , "light-mode");
+        }else{
+            localStorage.setItem("mode" , "dark-mode");
+        }
+      });
+
+// js code to toggle search box
+        searchToggle.addEventListener("click" , () =>{
+        searchToggle.classList.toggle("active");
+      });
+ 
+      
+//   js code to toggle sidebar
+sidebarOpen.addEventListener("click" , () =>{
+    nav.classList.add("active");
+});
+
+body.addEventListener("click" , e =>{
+    let clickedElm = e.target;
+
+    if(!clickedElm.classList.contains("sidebarOpen") && !clickedElm.classList.contains("menu")){
+        nav.classList.remove("active");
+    }
+});
+
+</script>
+
+
+    <body class="novel-template-default single single-novel">
+        <div class="site-header" style="margin-bottom: 40px;">
+            
+            <div class="site-branding">
+
+
+                <a class="home-link" href="./index.html" title="HOME" rel="home">
+                    <div class="site-title site-remake">HITECHY's NOVEL's</div>
+                    <div class="site-bg"></div>
+                    <span class="site-description">Read Novel
+                        online In High Quality</span>
+                    <div class="topnav">
+
+                        <div class="menu-item search-container">
+                            <form action="">
+                                <input type="text" placeholder="Search.." name="search">
+                                <button type="submit"><i class="dropbtn3 fa fa-search"></i>
+
+                                </button>
+                            </form>
+
+
+                        </div>
+                    </div>
+
+            </div>
+            
+        </div>
+
+
+        </header>
+    </body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+            </div>
+            <div class="col-md-4">
+            </div>
+            <div class="col-md-4">
+            </div>
+        </div>
+    </div>
+    <div id="content" class="site-content">
+        <div class="container">
+            <div class="row">
+                <div id="primary" class="col-md-9 content-area">
+                    
+                    <main id="main" role="main" style="
+    padding-top: 30px;
+">
+                        <div id="sizecontroldiv" class="controlstyle" style="text-align: center; margin:10px">
+
+
+                            <head>
+                                <meta charset="utf-8">
+                                <meta name="viewport" content2="width=device-width" />
+                                <link rel="stylesheet" href="./home_page.css" />
+                            </head>
+
+                            <body>
+                                <div class="body2-site2">
+                                    <div class="container2 container2-header">
+                                        <!-- <div class="container2 container2-main2"> -->
+                                            <div class="container2-main2-left2">
+                                                <div class="panel2-content2-homepage2">
+                                                    <h1 class="content2-homepage2-title2">READ NOVEL
+                                                        ONLINE
+                                                    </h1>
+                                                    <div class="dropbtn3 content2-homepage2-item2">
+                                                        <a data-tooltip="sticky_39170"
+                                                            class=" tooltip item2-img bookmark_check "
+                                                            data-id="MzkxNzA=" rel="nofollow"
+                                                            href="./tbate/tbate_home.html"
+                                                            title="THE BEGINNING AFTER THE END">
+                                                            <img class="img-loading" src="./assests/tbate.jpg"
+                                                                alt="THE BEGINNING AFTER THE END" />
+                                                            <em class="item2-rate">4.6</em> </a>
+                                                        <div class="content2-homepage2-item2-right">
+                                                            <h3 class="item2-title2">
+                                                                <a data-tooltip="sticky_39170"
+                                                                    class="tooltip a-h text-nowrap"
+                                                                    href="./tbate/tbate_home.html"
+                                                                    title="THE BEGINNING AFTER THE END">THE
+                                                                    BEGINNING AFTER THE END</a>
+                                                            </h3>
+                                                            <span class="text-nowrap item2-author"
+                                                                title="by TURTLE ME">by TURTLE ME</span>
+                                                            <p class="a-h item2-chapter">
+                                                                <a rel="nofollow" class="text-nowrap" href=""
+                                                                    title="THE BEGINNING AFTER THE END">CHPATER
+                                                                    : 3</a>
+                                                                <i>1d ago</i>
+                                                            </p>
+                                                            <p class="a-h item2-chapter">
+                                                                <a rel="nofollow" class="text-nowrap" href=""
+                                                                    title="THE BEGINNING AFTER THE END">CHPATER
+                                                                    : 2</a>
+                                                                <i>1d ago</i>
+                                                            </p>
+                                                            </p>
+                                                            <p class="a-h item2-chapter">
+                                                                <a rel="nofollow" class="text-nowrap"
+                                                                    href="./tbate/tbate_chapter1.html"
+                                                                    title="THE BEGINNING AFTER THE END">CHPATER :
+                                                                    1</a>
+                                                                <i>1d ago</i>
+                                                            </p>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="dropbtn3 content2-homepage2-item2">
+                                                        <a data-tooltip="sticky_39170"
+                                                            class=" tooltip item2-img bookmark_check "
+                                                            data-id="MzkxNzA=" rel="nofollow"
+                                                            href="./tbate/tbate_home.html"
+                                                            title="THE BEGINNING AFTER THE END">
+                                                            <img class="img-loading" src="./assests/no_preview.png"
+                                                                alt="EMPTY" />
+                                                            <em class="item2-rate">4.6</em> </a>
+                                                        <div class="content2-homepage2-item2-right">
+                                                            <h3 class="item2-title2">
+                                                                <a data-tooltip="sticky_39170"
+                                                                    class="tooltip a-h text-nowrap" href=""
+                                                                    title="EMPTY">WILL UPDATE SOON</a>
+                                                            </h3>
+                                                            <span class="text-nowrap item2-author" title="by ....">by
+                                                                ...</span>
+                                                            <p class="a-h item2-chapter">
+                                                                <a rel="nofollow" class="text-nowrap" href=""
+                                                                    title="title2">CHPATER : 3</a>
+                                                                <i>1d ago</i>
+                                                            </p>
+
+                                                            <p class="a-h item2-chapter">
+                                                                <a rel="nofollow" class="text-nowrap" href=""
+                                                                    title="title2">CHPATER : 2</a>
+                                                                <i>1d ago</i>
+                                                            </p>
+                                                            </p>
+                                                            <p class="a-h item2-chapter">
+                                                                <a rel="nofollow" class="text-nowrap" href=""
+                                                                    title="title2">CHPATER : 1</a>
+                                                                <i>1d ago</i>
+                                                            </p>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="dropbtn3 content2-homepage2-item2">
+                                                        <a data-tooltip="sticky_39170"
+                                                            class=" tooltip item2-img bookmark_check "
+                                                            data-id="MzkxNzA=" rel="nofollow" href=""
+                                                            title="THE BEGINNING AFTER THE END">
+                                                            <img class="img-loading" src="./assests/no_preview.png"
+                                                                alt="EMPTY" />
+                                                            <em class="item2-rate">4.6</em> </a>
+                                                        <div class="content2-homepage2-item2-right">
+                                                            <h3 class="item2-title2">
+                                                                <a data-tooltip="sticky_39170"
+                                                                    class="tooltip a-h text-nowrap" href=""
+                                                                    title="EMPTY">WILL UPDATE SOON</a>
+                                                            </h3>
+                                                            <span class="text-nowrap item2-author" title="by ....">by
+                                                                ...</span>
+                                                            <p class="a-h item2-chapter">
+                                                                <a rel="nofollow" class="text-nowrap" href=""
+                                                                    title="title2">CHPATER : 3</a>
+                                                                <i>1d ago</i>
+                                                            </p>
+                                                            <p class="a-h item2-chapter">
+                                                                <a rel="nofollow" class="text-nowrap" href=""
+                                                                    title="title2">CHPATER : 2</a>
+                                                                <i>1d ago</i>
+                                                            </p>
+                                                            </p>
+                                                            <p class="a-h item2-chapter">
+                                                                <a rel="nofollow" class="text-nowrap" href=""
+                                                                    title="title2">CHPATER : 1</a>
+                                                                <i>1d ago</i>
+                                                            </p>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="dropbtn3 content2-homepage2-item2">
+                                                        <a data-tooltip="sticky_39170"
+                                                            class=" tooltip item2-img bookmark_check "
+                                                            data-id="MzkxNzA=" rel="nofollow" href=""
+                                                            title="THE BEGINNING AFTER THE END">
+                                                            <img class="img-loading" src="./assests/no_preview.png"
+                                                                alt="EMPTY" />
+                                                            <em class="item2-rate">4.6</em> </a>
+                                                        <div class="content2-homepage2-item2-right">
+                                                            <h3 class="item2-title2">
+                                                                <a data-tooltip="sticky_39170"
+                                                                    class="tooltip a-h text-nowrap" href=""
+                                                                    title="EMPTY">WILL UPDATE SOON</a>
+                                                            </h3>
+                                                            <span class="text-nowrap item2-author" title="by ....">by
+                                                                ...</span>
+                                                            <p class="a-h item2-chapter">
+                                                                <a rel="nofollow" class="text-nowrap" href=""
+                                                                    title="title2">CHPATER : 3</a>
+                                                                <i>1d ago</i>
+                                                            </p>
+                                                            <p class="a-h item2-chapter">
+                                                                <a rel="nofollow" class="text-nowrap" href=""
+                                                                    title="title2">CHPATER : 2</a>
+                                                                <i>1d ago</i>
+                                                            </p>
+                                                            </p>
+                                                            <p class="a-h item2-chapter">
+                                                                <a rel="nofollow" class="text-nowrap" href=""
+                                                                    title="title2">CHPATER : 1</a>
+                                                                <i>1d ago</i>
+                                                            </p>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="dropbtn3 content2-homepage2-item2">
+                                                        <a data-tooltip="sticky_39170"
+                                                            class=" tooltip item2-img bookmark_check "
+                                                            data-id="MzkxNzA=" rel="nofollow" href=""
+                                                            title="THE BEGINNING AFTER THE END">
+                                                            <img class="img-loading" src="./assests/no_preview.png"
+                                                                alt="EMPTY" />
+                                                            <em class="item2-rate">4.6</em> </a>
+                                                        <div class="content2-homepage2-item2-right">
+                                                            <h3 class="item2-title2">
+                                                                <a data-tooltip="sticky_39170"
+                                                                    class="tooltip a-h text-nowrap" href=""
+                                                                    title="EMPTY">WILL UPDATE SOON</a>
+                                                            </h3>
+                                                            <span class="text-nowrap item2-author" title="by ....">by
+                                                                ...</span>
+                                                            <p class="a-h item2-chapter">
+                                                                <a rel="nofollow" class="text-nowrap" href=""
+                                                                    title="title2">CHPATER : 3</a>
+                                                                <i>1d ago</i>
+                                                            </p>
+                                                            <p class="a-h item2-chapter">
+                                                                <a rel="nofollow" class="text-nowrap" href=""
+                                                                    title="title2">CHPATER : 2</a>
+                                                                <i>1d ago</i>
+                                                            </p>
+                                                            </p>
+                                                            <p class="a-h item2-chapter">
+                                                                <a rel="nofollow" class="text-nowrap" href=""
+                                                                    title="title2">CHPATER : 1</a>
+                                                                <i>1d ago</i>
+                                                            </p>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="dropbtn3 content2-homepage2-item2">
+                                                        <a data-tooltip="sticky_39170"
+                                                            class=" tooltip item2-img bookmark_check "
+                                                            data-id="MzkxNzA=" rel="nofollow" href=""
+                                                            title="THE BEGINNING AFTER THE END">
+                                                            <img class="img-loading" src="./assests/no_preview.png"
+                                                                alt="EMPTY" />
+                                                            <em class="item2-rate">4.6</em> </a>
+                                                        <div class="content2-homepage2-item2-right">
+                                                            <h3 class="item2-title2">
+                                                                <a data-tooltip="sticky_39170"
+                                                                    class="tooltip a-h text-nowrap" href=""
+                                                                    title="EMPTY">WILL UPDATE SOON</a>
+                                                            </h3>
+                                                            <span class="text-nowrap item2-author" title="by ....">by
+                                                                ...</span>
+                                                            <p class="a-h item2-chapter">
+                                                                <a rel="nofollow" class="text-nowrap" href=""
+                                                                    title="title2">CHPATER : 3</a>
+                                                                <i>1d ago</i>
+                                                            </p>
+                                                            <p class="a-h item2-chapter">
+                                                                <a rel="nofollow" class="text-nowrap" href=""
+                                                                    title="title2">CHPATER : 2</a>
+                                                                <i>1d ago</i>
+                                                            </p>
+                                                            </p>
+                                                            <p class="a-h item2-chapter">
+                                                                <a rel="nofollow" class="text-nowrap" href=""
+                                                                    title="title2">CHPATER : 1</a>
+                                                                <i>1d ago</i>
+                                                            </p>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="dropbtn3 content2-homepage2-item2">
+                                                        <a data-tooltip="sticky_39170"
+                                                            class=" tooltip item2-img bookmark_check "
+                                                            data-id="MzkxNzA=" rel="nofollow" href=""
+                                                            title="THE BEGINNING AFTER THE END">
+                                                            <img class="img-loading" src="./assests/no_preview.png"
+                                                                alt="EMPTY" />
+                                                            <em class="item2-rate">4.6</em> </a>
+                                                        <div class="content2-homepage2-item2-right">
+                                                            <h3 class="item2-title2">
+                                                                <a data-tooltip="sticky_39170"
+                                                                    class="tooltip a-h text-nowrap" href=""
+                                                                    title="EMPTY">WILL UPDATE SOON</a>
+                                                            </h3>
+                                                            <span class="text-nowrap item2-author" title="by ....">by
+                                                                ...</span>
+                                                            <p class="a-h item2-chapter">
+                                                                <a rel="nofollow" class="text-nowrap" href=""
+                                                                    title="title2">CHPATER : 3</a>
+                                                                <i>1d ago</i>
+                                                            </p>
+                                                            <p class="a-h item2-chapter">
+                                                                <a rel="nofollow" class="text-nowrap" href=""
+                                                                    title="title2">CHPATER : 2</a>
+                                                                <i>1d ago</i>
+                                                            </p>
+                                                            </p>
+                                                            <p class="a-h item2-chapter">
+                                                                <a rel="nofollow" class="text-nowrap" href=""
+                                                                    title="title2">CHPATER : 1</a>
+                                                                <i>1d ago</i>
+                                                            </p>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="dropbtn3 content2-homepage2-item2">
+                                                        <a data-tooltip="sticky_39170"
+                                                            class=" tooltip item2-img bookmark_check "
+                                                            data-id="MzkxNzA=" rel="nofollow" href=""
+                                                            title="THE BEGINNING AFTER THE END">
+                                                            <img class="img-loading" src="./assests/no_preview.png"
+                                                                alt="EMPTY" />
+                                                            <em class="item2-rate">4.6</em> </a>
+                                                        <div class="content2-homepage2-item2-right">
+                                                            <h3 class="item2-title2">
+                                                                <a data-tooltip="sticky_39170"
+                                                                    class="tooltip a-h text-nowrap" href=""
+                                                                    title="EMPTY">WILL UPDATE SOON</a>
+                                                            </h3>
+                                                            <span class="text-nowrap item2-author" title="by ....">by
+                                                                ...</span>
+                                                            <p class="a-h item2-chapter">
+                                                                <a rel="nofollow" class="text-nowrap" href=""
+                                                                    title="title2">CHPATER : 3</a>
+                                                                <i>1d ago</i>
+                                                            </p>
+                                                            <p class="a-h item2-chapter">
+                                                                <a rel="nofollow" class="text-nowrap" href=""
+                                                                    title="title2">CHPATER : 2</a>
+                                                                <i>1d ago</i>
+                                                            </p>
+                                                            </p>
+                                                            <p class="a-h item2-chapter">
+                                                                <a rel="nofollow" class="text-nowrap" href=""
+                                                                    title="title2">CHPATER : 1</a>
+                                                                <i>1d ago</i>
+                                                            </p>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="dropbtn3 content2-homepage2-item2">
+                                                        <a data-tooltip="sticky_39170"
+                                                            class=" tooltip item2-img bookmark_check "
+                                                            data-id="MzkxNzA=" rel="nofollow" href=""
+                                                            title="THE BEGINNING AFTER THE END">
+                                                            <img class="img-loading" src="./assests/no_preview.png"
+                                                                alt="EMPTY" />
+                                                            <em class="item2-rate">4.6</em> </a>
+                                                        <div class="content2-homepage2-item2-right">
+                                                            <h3 class="item2-title2">
+                                                                <a data-tooltip="sticky_39170"
+                                                                    class="tooltip a-h text-nowrap" href=""
+                                                                    title="EMPTY">WILL UPDATE SOON</a>
+                                                            </h3>
+                                                            <span class="text-nowrap item2-author" title="by ....">by
+                                                                ...</span>
+                                                            <p class="a-h item2-chapter">
+                                                                <a rel="nofollow" class="text-nowrap" href=""
+                                                                    title="title2">CHPATER : 3</a>
+                                                                <i>1d ago</i>
+                                                            </p>
+                                                            <p class="a-h item2-chapter">
+                                                                <a rel="nofollow" class="text-nowrap" href=""
+                                                                    title="title2">CHPATER : 2</a>
+                                                                <i>1d ago</i>
+                                                            </p>
+                                                            </p>
+                                                            <p class="a-h item2-chapter">
+                                                                <a rel="nofollow" class="text-nowrap" href=""
+                                                                    title="title2">CHPATER : 1</a>
+                                                                <i>1d ago</i>
+                                                            </p>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="dropbtn3 content2-homepage2-item2">
+                                                        <a data-tooltip="sticky_39170"
+                                                            class=" tooltip item2-img bookmark_check "
+                                                            data-id="MzkxNzA=" rel="nofollow" href=""
+                                                            title="THE BEGINNING AFTER THE END">
+                                                            <img class="img-loading" src="./assests/no_preview.png"
+                                                                alt="EMPTY" />
+                                                            <em class="item2-rate">4.6</em> </a>
+                                                        <div class="content2-homepage2-item2-right">
+                                                            <h3 class="item2-title2">
+                                                                <a data-tooltip="sticky_39170"
+                                                                    class="tooltip a-h text-nowrap" href=""
+                                                                    title="EMPTY">WILL UPDATE SOON</a>
+                                                            </h3>
+                                                            <span class="text-nowrap item2-author" title="by ....">by
+                                                                ...</span>
+                                                            <p class="a-h item2-chapter">
+                                                                <a rel="nofollow" class="text-nowrap" href=""
+                                                                    title="title2">CHPATER : 3</a>
+                                                                <i>1d ago</i>
+                                                            </p>
+                                                            <p class="a-h item2-chapter">
+                                                                <a rel="nofollow" class="text-nowrap" href=""
+                                                                    title="title2">CHPATER : 2</a>
+                                                                <i>1d ago</i>
+                                                            </p>
+                                                            </p>
+                                                            <p class="a-h item2-chapter">
+                                                                <a rel="nofollow" class="text-nowrap" href=""
+                                                                    title="title2">CHPATER : 1</a>
+                                                                <i>1d ago</i>
+                                                            </p>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="dropbtn3 content2-homepage2-item2">
+                                                        <a data-tooltip="sticky_39170"
+                                                            class=" tooltip item2-img bookmark_check "
+                                                            data-id="MzkxNzA=" rel="nofollow" href=""
+                                                            title="THE BEGINNING AFTER THE END">
+                                                            <img class="img-loading" src="./assests/no_preview.png"
+                                                                alt="EMPTY" />
+                                                            <em class="item2-rate">4.6</em> </a>
+                                                        <div class="content2-homepage2-item2-right">
+                                                            <h3 class="item2-title2">
+                                                                <a data-tooltip="sticky_39170"
+                                                                    class="tooltip a-h text-nowrap" href=""
+                                                                    title="EMPTY">WILL UPDATE SOON</a>
+                                                            </h3>
+                                                            <span class="text-nowrap item2-author" title="by ....">by
+                                                                ...</span>
+                                                            <p class="a-h item2-chapter">
+                                                                <a rel="nofollow" class="text-nowrap" href=""
+                                                                    title="title2">CHPATER : 3</a>
+                                                                <i>1d ago</i>
+                                                            </p>
+                                                            <p class="a-h item2-chapter">
+                                                                <a rel="nofollow" class="text-nowrap" href=""
+                                                                    title="title2">CHPATER : 2</a>
+                                                                <i>1d ago</i>
+                                                            </p>
+                                                            </p>
+                                                            <p class="a-h item2-chapter">
+                                                                <a rel="nofollow" class="text-nowrap" href=""
+                                                                    title="title2">CHPATER : 1</a>
+                                                                <i>1d ago</i>
+                                                            </p>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="dropbtn3 content2-homepage2-item2">
+                                                        <a data-tooltip="sticky_39170"
+                                                            class=" tooltip item2-img bookmark_check "
+                                                            data-id="MzkxNzA=" rel="nofollow" href=""
+                                                            title="THE BEGINNING AFTER THE END">
+                                                            <img class="img-loading" src="./assests/no_preview.png"
+                                                                alt="EMPTY" />
+                                                            <em class="item2-rate">4.6</em> </a>
+                                                        <div class="content2-homepage2-item2-right">
+                                                            <h3 class="item2-title2">
+                                                                <a data-tooltip="sticky_39170"
+                                                                    class="tooltip a-h text-nowrap" href=""
+                                                                    title="EMPTY">WILL UPDATE SOON</a>
+                                                            </h3>
+                                                            <span class="text-nowrap item2-author" title="by ....">by
+                                                                ...</span>
+                                                            <p class="a-h item2-chapter">
+                                                                <a rel="nofollow" class="text-nowrap" href=""
+                                                                    title="title2">CHPATER : 3</a>
+                                                                <i>1d ago</i>
+                                                            </p>
+                                                            <p class="a-h item2-chapter">
+                                                                <a rel="nofollow" class="text-nowrap" href=""
+                                                                    title="title2">CHPATER : 2</a>
+                                                                <i>1d ago</i>
+                                                            </p>
+                                                            </p>
+                                                            <p class="a-h item2-chapter">
+                                                                <a rel="nofollow" class="text-nowrap" href=""
+                                                                    title="title2">CHPATER : 1</a>
+                                                                <i>1d ago</i>
+                                                            </p>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="dropbtn3 content2-homepage2-item2">
+                                                        <a data-tooltip="sticky_39170"
+                                                            class=" tooltip item2-img bookmark_check "
+                                                            data-id="MzkxNzA=" rel="nofollow" href=""
+                                                            title="THE BEGINNING AFTER THE END">
+                                                            <img class="img-loading" src="./assests/no_preview.png"
+                                                                alt="EMPTY" />
+                                                            <em class="item2-rate">4.6</em> </a>
+                                                        <div class="content2-homepage2-item2-right">
+                                                            <h3 class="item2-title2">
+                                                                <a data-tooltip="sticky_39170"
+                                                                    class="tooltip a-h text-nowrap" href=""
+                                                                    title="EMPTY">WILL UPDATE SOON</a>
+                                                            </h3>
+                                                            <span class="text-nowrap item2-author" title="by ....">by
+                                                                ...</span>
+                                                            <p class="a-h item2-chapter">
+                                                                <a rel="nofollow" class="text-nowrap" href=""
+                                                                    title="title2">CHPATER : 3</a>
+                                                                <i>1d ago</i>
+                                                            </p>
+                                                            <p class="a-h item2-chapter">
+                                                                <a rel="nofollow" class="text-nowrap" href=""
+                                                                    title="title2">CHPATER : 2</a>
+                                                                <i>1d ago</i>
+                                                            </p>
+                                                            </p>
+                                                            <p class="a-h item2-chapter">
+                                                                <a rel="nofollow" class="text-nowrap" href=""
+                                                                    title="title2">CHPATER : 1</a>
+                                                                <i>1d ago</i>
+                                                            </p>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="dropbtn3 content2-homepage2-item2">
+                                                        <a data-tooltip="sticky_39170"
+                                                            class=" tooltip item2-img bookmark_check "
+                                                            data-id="MzkxNzA=" rel="nofollow" href=""
+                                                            title="THE BEGINNING AFTER THE END">
+                                                            <img class="img-loading" src="./assests/no_preview.png"
+                                                                alt="EMPTY" />
+                                                            <em class="item2-rate">4.6</em> </a>
+                                                        <div class="content2-homepage2-item2-right">
+                                                            <h3 class="item2-title2">
+                                                                <a data-tooltip="sticky_39170"
+                                                                    class="tooltip a-h text-nowrap" href=""
+                                                                    title="EMPTY">WILL UPDATE SOON</a>
+                                                            </h3>
+                                                            <span class="text-nowrap item2-author" title="by ....">by
+                                                                ...</span>
+                                                            <p class="a-h item2-chapter">
+                                                                <a rel="nofollow" class="text-nowrap" href=""
+                                                                    title="title2">CHPATER : 3</a>
+                                                                <i>1d ago</i>
+                                                            </p>
+                                                            <p class="a-h item2-chapter">
+                                                                <a rel="nofollow" class="text-nowrap" href=""
+                                                                    title="title2">CHPATER : 2</a>
+                                                                <i>1d ago</i>
+                                                            </p>
+                                                            </p>
+                                                            <p class="a-h item2-chapter">
+                                                                <a rel="nofollow" class="text-nowrap" href=""
+                                                                    title="title2">CHPATER : 1</a>
+                                                                <i>1d ago</i>
+                                                            </p>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="dropbtn3 content2-homepage2-item2">
+                                                        <a data-tooltip="sticky_39170"
+                                                            class="tooltip item2-img bookmark_check " data-id="MzkxNzA="
+                                                            rel="nofollow" href="" title="THE BEGINNING AFTER THE END">
+                                                            <img class="img-loading" src="./assests/no_preview.png"
+                                                                alt="EMPTY" />
+                                                            <em class="item2-rate">4.6</em> </a>
+                                                        <div class="content2-homepage2-item2-right">
+                                                            <h3 class="item2-title2">
+                                                                <a data-tooltip="sticky_39170"
+                                                                    class="tooltip a-h text-nowrap" href=""
+                                                                    title="EMPTY">WILL UPDATE SOON</a>
+                                                            </h3>
+                                                            <span class="text-nowrap item2-author" title="by ....">by
+                                                                ...</span>
+                                                            <p class="a-h item2-chapter">
+                                                                <a rel="nofollow" class="text-nowrap" href=""
+                                                                    title="title2">CHPATER : 3</a>
+                                                                <i>1d ago</i>
+                                                            </p>
+                                                            <p class="a-h item2-chapter">
+                                                                <a rel="nofollow" class="text-nowrap" href=""
+                                                                    title="title2">CHPATER : 2</a>
+                                                                <i>1d ago</i>
+                                                            </p>
+                                                            </p>
+                                                            <p class="a-h item2-chapter">
+                                                                <a rel="nofollow" class="text-nowrap" href=""
+                                                                    title="title2">CHPATER : 1</a>
+                                                                <i>1d ago</i>
+                                                            </p>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="dropbtn3 content2-homepage2-item2">
+                                                        <a data-tooltip="sticky_39170"
+                                                            class=" tooltip item2-img bookmark_check "
+                                                            data-id="MzkxNzA=" rel="nofollow" href=""
+                                                            title="THE BEGINNING AFTER THE END">
+                                                            <img class="img-loading" src="./assests/no_preview.png"
+                                                                alt="EMPTY" />
+                                                            <em class="item2-rate">4.6</em> </a>
+                                                        <div class="content2-homepage2-item2-right">
+                                                            <h3 class="item2-title2">
+                                                                <a data-tooltip="sticky_39170"
+                                                                    class="tooltip a-h text-nowrap" href=""
+                                                                    title="EMPTY">WILL UPDATE SOON</a>
+                                                            </h3>
+                                                            <span class="text-nowrap item2-author" title="by ....">by
+                                                                ...</span>
+                                                            <p class="a-h item2-chapter">
+                                                                <a rel="nofollow" class="text-nowrap" href=""
+                                                                    title="title2">CHPATER : 3</a>
+                                                                <i>1d ago</i>
+                                                            </p>
+                                                            <p class="a-h item2-chapter">
+                                                                <a rel="nofollow" class="text-nowrap" href=""
+                                                                    title="title2">CHPATER : 2</a>
+                                                                <i>1d ago</i>
+                                                            </p>
+                                                            </p>
+                                                            <p class="a-h item2-chapter">
+                                                                <a rel="nofollow" class="text-nowrap" href=""
+                                                                    title="title2">CHPATER : 1</a>
+                                                                <i>1d ago</i>
+                                                            </p>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+
+
+
+                                        </div>
+                                        <div>
+                                            <hr>
+                                            <br>
+                                            <div class="pagination justify-content-center">
+
+                                                <a class="dropbtn222 color page11-link11" data-page="1"
+                                                    title="Go to the First Page"><span aria-hidden="true">«</span><span
+                                                        class="sr-only">First</span></a>
+                                                <a class=" dropbtn222 color page11-link11 prev-page11" data-page="1"
+                                                    title="Go to Page 1"><span aria-hidden="true">‹</span><span
+                                                        class="sr-only">Prev</span></a>
+                                                <span class="dropbtn222 page11-link11"
+                                                    title="We're on Page 1 of 378">1<span class="sr-only">
+                                                        (current)</span></span>
+
+                                                <a class="dropbtn222 color page11-link11 next-page" data-page="2"
+                                                    title="Go to Page 2"><span class="sr-only">Next</span><span
+                                                        aria-hidden="true">›</span></a>
+                                                <a class="dropbtn222 color page11-link11" data-page="378"
+                                                    title="Go to the Last Page"><span class="sr-only">Last</span><span
+                                                        aria-hidden="true">»</span></a>
+
+                                            </div>
+                                            <br>
+                                            <div>
+                                                <p>DISCLAIMER: THIS SITE IS JUST A PROTOTYPE !</p>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+
+                                    <div class="footer-widget-wrapper">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                </div>
+                                                <div class="col-md-4">
+                                                </div>
+                                                <div class="col-md-4">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <footer id="colophon" class="site-footer" role="contentinfo">
+                                        <div class="align">
+
+                                            
+        <div class="socialicons">
+            <a class="glassIco" href="https://wa.me/919717240198?text=Hlo!%20%0AI%20want%20to%20join%20with%20you%20and%20wanna%20earn%20money%0A"><i class="fa-brands fa-whatsapp"></i></a>
+            <a class="glassIco" href="https://www.instagram.com/p_r_1_y_a_n_s_h_1?r=nametag"><i class="fa-brands fa-instagram"></i></a>
+            <a class="glassIco" href="mailto:affiliatemarketerpriyanshi@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+
+
+                                        </div>
+                                        <div class="row site-info">
+                                            <a>© 2022 All rights reserved.</a> | <a>Privacy Policy</a> | <a>Terms
+                                                and Conditions</a>
+                                        </div>
+                                    </footer>
+                            </body>
+</body>
+
+</html>
