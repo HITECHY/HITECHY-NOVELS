@@ -1,0 +1,277 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylings/styling.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googlepis.com/css2?family=Josefin+sans:ital,weight@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <title>tbate_chapter1</title>
+
+</head>
+
+<body>
+
+    <title>The Beginning After the End Light Novel</title>
+    <!-- <link rel='stylesheet' id='bootstrap-css' href="bootsrap.css" type='text/css' media='all' /> -->
+    <link rel='stylesheet' id='lighthouse-style-css' href="/stylings/home_page.css" type='text/css' media='all' />
+    <link rel='stylesheet' id='lighthousegooglefonts-css' href="fonts.css" type='text/css' media='all' />
+    <script type="text/javascript" src="/stylings/homee.js"></script>
+    <nav>
+        <div class="nav-bar">
+            <i class='bx bx-menu sidebarOpen'></i>
+
+
+            <div class="menu">
+                <div class="logo-toggle">
+                    <span class="logo"><a href="#">HITECHY NOVELS</a></span>
+                    <i class='bx bx-x siderbarClose'></i>
+                </div>
+
+                <ul class="nav-links">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/Navigations/skills_animation.html">Skills</a></li>
+                    <li><a href="/Navigations/portfolio.html">Portfolio</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="/Navigations/contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="darkLight-searchBox">
+                <div class="dark-light">
+                    <i class='bx bx-moon moon'></i>
+                    <i class='bx bx-sun sun'></i>
+                </div>
+
+                <div class="searchBox">
+                    <div class="searchToggle">
+                        <i class='bx bx-x cancel'></i>
+                        <i class='bx bx-search search'></i>
+                    </div>
+                    <div class="search-field">
+                        <input type="text" placeholder="Search...">
+                        <i class='bx bx-search'></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+
+        const body = document.querySelector("body"),
+            nav = document.querySelector("nav"),
+            modeToggle = document.querySelector(".dark-light"),
+            searchToggle = document.querySelector(".searchToggle"),
+            sidebarOpen = document.querySelector(".sidebarOpen"),
+            siderbarClose = document.querySelector(".siderbarClose");
+
+        let getMode = localStorage.getItem("mode");
+        if (getMode && getMode === "dark-mode") {
+            body.classList.add("dark");
+        }
+
+        // js code to toggle dark and light mode
+        modeToggle.addEventListener("click", () => {
+            modeToggle.classList.toggle("active");
+            body.classList.toggle("dark");
+
+            // js code to keep user selected mode even page refresh or file reopen
+            if (!body.classList.contains("dark")) {
+                localStorage.setItem("mode", "light-mode");
+            } else {
+                localStorage.setItem("mode", "dark-mode");
+            }
+        });
+
+        // js code to toggle search box
+        searchToggle.addEventListener("click", () => {
+            searchToggle.classList.toggle("active");
+        });
+
+
+        //   js code to toggle sidebar
+        sidebarOpen.addEventListener("click", () => {
+            nav.classList.add("active");
+        });
+
+        body.addEventListener("click", e => {
+            let clickedElm = e.target;
+
+            if (!clickedElm.classList.contains("sidebarOpen") && !clickedElm.classList.contains("menu")) {
+                nav.classList.remove("active");
+            }
+        });
+
+    </script>
+
+
+    <body class="novel-template-default single single-novel">
+        <div class="site-header" style="
+        margin-bottom: 65px;
+        bottom: 0px;">
+
+            <div class="site-branding">
+
+
+                <a class="home-link" href="./index.html" title="HOME" rel="home">
+                    <div class="site-title site-remake">HITECHY's NOVEL's</div>
+                    <div class="site-bg"></div>
+                    <span class="site-description">Read Novel
+                        online In High Quality</span>
+                    <div class="topnav">
+
+                        <div class="menu-item search-container">
+                            <form action="">
+                                <input type="text" placeholder="Search.." name="search">
+                                <button type="submit"><i class="dropbtn3 fa fa-search"></i>
+
+                                </button>
+                            </form>
+
+
+                        </div>
+                    </div>
+
+            </div>
+
+        </div>
+
+
+        </header>
+    </body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+            </div>
+            <div class="col-md-4">
+            </div>
+            <div class="col-md-4">
+            </div>
+        </div>
+    </div>
+    <div id="content" class="site-content">
+        <div class="container">
+            <div class="row">
+                <div id="primary" class="col-md-9 content-area">
+
+                    <main id="main" role="main">
+                        <div id="sizecontroldiv" class="controlstyle" style="text-align: center; margin:10px">
+                            <article id="post-1106"
+                                class="post-content post-1106 novel type-novel status-publish hentry">
+                                <a href="#"
+                                    rel="bookmark">
+                                </a>
+                                <header class="entry-header" style="margin-top: 65px;">
+                                    <span class="screen-reader-text">The Beginning After the End Light Novel Chapter
+                                        1</span>
+                                    <h1 class="entry-title">The Beginning After the End Light Novel Chapter 1</h1>
+                                </header>
+
+                                <h2 style='font-size: 16px; text-align:center;'>You are reading The Beginning After
+                                    the End Light Novel Chapter 1 ihn English / Read The Beginning After the End
+                                    Light Novel Chapter 1 manga stream Online</h2>
+                                <div class="entry-content">
+                                    <p>&#8220;The Continent of Dicathen comprises three major Kingdoms: The Forest
+                                        Kingdom of Elenoir in the North, The Underground Kingdom of Darv nearing the
+                                        southern border, and The Kingdom of Sapin, located on the eastern border of
+                                        the continent. There also exists the Beast Glades, of which a large
+                                        percentile remains a mystery. Not much of the Beast Glades have been
+                                        traversed due to the abundance of beasts hostile to travelers as well as
+                                        each other. Yet, every year, countless expeditions have been made due to the
+                                        tempting riches one could reap&#8230;….&#8221;</p>
+                                    <p>&#8220;flip&#8221;</p>
+                                    <p>&#8220;&#8230;.The Kingdom of Elenoir is the homeland of the Elf race,
+                                        located deep in the Forest of Elshire where thick mist naturally forms
+                                        deterring all but the elves, who, with their acute senses, can navigate
+                                        freely…&#8221;</p>
+                                    <p>&#8220;flip&#8221;</p>
+                                    <p>&#8220;&#8230;The Kingdom of Darv is a network of underground passages and
+                                        enormous caves that can span up to several kilometers, whereupon the Dwarvin
+                                        race reside.&#8221;</p>
+                                    <p>&#8220;flip&#8221;</p>
+                                    <p>&#8220;….The Kingdom of Sapin is easily the largest and most populated region
+                                        in the continent. While this Kingdom is primarily composed of humans, there
+                                        are also many merchants from the Dwarvin race, trading commodities of
+                                        many&#8230;&#8221;</p>
+                                    <p>&#8220;flip&#8221;</p>
+                                    <p>&#8220;…While the Beast Glades house countless monsters and creatures, they
+                                        also contain wondrous treasures with long forgotten origins, obtainable by
+                                        those who dare to seek them. There are records, written by adventurers and
+                                        mercenaries, about dungeons and lairs of powerful entities that can make
+                                        even the most generous priest into a greedy&#8230;&#8221;</p>
+                                    <p>&#8220;flip&#8221;</p>
+                                    <p>&#8220;….Between the Forest of Elshire and the Kingdom of Sapin lies the
+                                        Grand Mountain range which spans across roughly 90% of the continent,
+                                        separating the North and East from the West and South &#8230;&#8221;</p>
+                                    <p>&#8220;flip&#8221;</p>
+                                    <p>&#8220;While the Kingdom of Darv and Sapin hold a symbiotic relationship for
+                                        resources, the Elves seclude themselves and act aggressively towards every
+                                        other&#8230;&#8221;</p>
+                                    <p>&#8220;flip&#8221;</p>
+                                    <p>Closing the worn covers of what seemed to be an encyclopedia of this world,
+                                        Arthur rubbed the bridge of his nose with his pudgy fingers, downcast, while
+                                        emanating a gloom that was almost tangible. He let out an audible half-sigh
+                                        that only seemed appropriate with his toothless mouth…</p>
+                                    <p>&#8220;PHUUUUUK…&#8221;</p>
+                                    <h2 style='font-size: 16px; text-align:center;'>You are reading The Beginning
+                                        After the End Light Novel Chapter 1 ihn English / Read The Beginning After
+                                        the End Light Novel Chapter 1 manga stream online on
+                                        <a>githublink</a>
+                                    </h2>
+                                </div>
+                            </article>
+                    </main>
+
+
+                    <div class="bottom-widgets">
+                        <h3>About The Beginning After the End</h3>
+                        <div class="textwidget">
+                            <p>King Grey has unrivaled strength, wealth, and prestige in a world governed by martial
+                                ability. However, solitude lingers closely behind those with great power. Beneath
+                                the glamorous exterior of a powerful king lurks the shell of man, devoid of purpose
+                                and will.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-widget-wrapper">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                        </div>
+                        <div class="col-md-4">
+                        </div>
+                        <div class="col-md-4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer id="colophon" class="site-footer" role="contentinfo">
+                <div class="align">
+
+                    <a class="glassIco" href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a class="glassIco" href="https://www.instagram.com/enmado_rokuu?r=nametag"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a class="glassIco" href="mailto:hitkumar592002@gmail.com"><i
+                                class="fa-solid fa-envelope"></i></a>
+
+
+                </div>
+                <div class="row site-info">
+                    <a>© 2022 All rights reserved.</a> | <a>Privacy Policy</a> | <a>Terms
+                        and Conditions</a>
+                </div>
+            </footer>
+</body>
+</body>
+
+</html>
