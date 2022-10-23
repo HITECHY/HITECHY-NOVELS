@@ -625,7 +625,7 @@ select:focus {
   float: left;
   width: calc(50% - 21px);
   padding: 10px;
-  height: 145px;
+  height: 160px;
   overflow: hidden;
 }
 
