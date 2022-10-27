@@ -2225,6 +2225,10 @@ img.wp-post-image {
     margin-bottom: 14px
 }
 
+.alignment{
+  font-size: 22px;
+  text-align: left;
+}
 .entry-header .entry-title a {
     color: #212121
 }
@@ -4283,7 +4287,9 @@ img.wp-post-image {
 }
 
 .entry-title {
-  margin-bottom: 14px
+  margin-bottom: 14px;
+  text-decoration: underline;
+  font-style: italic;
 }
 
 .entry-header .entry-title a {
@@ -5519,7 +5525,7 @@ p.comment-form-cookies-consent {
   border-radius: 5px;
   background: #c5c6c9;
   box-shadow: 0 0 35px;
-  letter-spacing: 0.15em;
+  /* letter-spacing: 0.15em; */
   transition: 0.5s;
 }
 .cta{
